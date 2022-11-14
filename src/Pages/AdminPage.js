@@ -12,7 +12,7 @@ import Button from "react-bootstrap/Button";
 
 const ENDPOINT =
   window.location.host.indexOf("localhost") >= 0
-    ? "http://127.0.0.1:4000"
+    ? process.env.REACT_APP_URL
     : window.location.host;
 
 export default function AdminPage() {
